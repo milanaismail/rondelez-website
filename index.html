@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.website.com/">
+
+    <meta name="description" content="Meta description for the page">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Title that shows up on google searches"/>
+    <meta property="og:description" content="Meta description for the page"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="Official link for that page (https://www.site.com)"/>
+    <meta property="og:image" content="/assets/images/social.jpg"/>
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg"/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/images/logo-light.png">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <title>Service Keyword Phrase | Company Name | City, State</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+    <div id="nav-placeholder"></div>
+
+    <script>
+       fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+    
+                // Load nav.js AFTER nav.html is loaded
+                const script = document.createElement('script');
+                script.src = "/assets/js/nav.js";
+                document.body.appendChild(script);
+            });
+    </script>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    Hero                      -->
+        <!-- ============================================ -->
+
+        <section id="hero-81">
+            <div class="cs-container">
+                <h1 class="cs-title">Bakkerij Rondelez, een Familiezaak</h1>
+                <p class="cs-text">
+                    Bakkerij Rondelez is een bakkerij die een rijk assortiment aan broden, luxebroden, broodjes en viennoiserie levert aan koude bakkerijen, hotels… enz.
+                </p>
+                <a href="" class="cs-button-solid">Contact</a>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+                <img loading="lazy" decoding="async" src="assets/images/hero-image.jpeg" alt="kitchen" width="2250" height="1500" aria-hidden="true">
+            </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   Gallery                    -->
+        <!-- ============================================ -->
+
+        <section id="gallery-453">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <div class="cs-flex">
+                        <span class="cs-topper">Producten</span>
+                        <h2 class="cs-title">Ons assortiment</h2>
+                    </div>
+                </div>
+                <!--Gallery 1-->
+                <div class="cs-gallery" >
+                    <!--Picture 1-->
+                    <a href="producten/broden.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/broden-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Broden</p>
+                        </div>
+                    </a>    
+                    <!--Picture 2-->
+                    <a href="producten/luxeproducten.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/luxeproducten-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Luxeproducten</p>
+                        </div>
+                    </a>
+                    <!--Picture 3-->
+                    <a href="producten/viennoiserie.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/viennoiserie-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Viennoiserie</p>
+                        </div>
+                    </a>
+                    <!--Picture 4-->
+                    <a href="producten/kleinbrood.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/kleine-broden-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Klein brood</p>
+                        </div>
+                    </a>
+                    <a href="producten/verassingsbrood.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/verassingsbroden-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Verassingsbrood</p>
+                        </div>
+                    </a>
+                </div>
+              
+            </div>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!--             Service Highlight                -->
+        <!-- ============================================ -->
+
+        <section id="RPsbsr-580">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/topkwaliteit-header.jpeg" alt="room" width="494" height="700">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">Over ons</span>
+                    <h2 class="cs-title">Gegarandeerde topkwaliteit</h2>
+                    <p class="cs-text">
+                        Omdat het allerbeste van ons verwacht wordt, houden we er ons aan dagelijks verse hoogstaande kwaliteitsproducten te maken. Dat doen we door enkel kwaliteitsvolle grondstoffen aan te kopen en elk brood op een ambachtelijke wijze te bereiden. 
+                    </p>
+                    <p class="cs-text">
+                        We voldoen dan ook aan alle normen en regels van
+                    </p>
+                    <div class="cs-text">
+                        <ul>
+                            <li>
+                                HACCP
+                            </li>
+                            <li>
+                                Autocontrolegids voor Bakkerijen
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="cs-text">
+                        Vanuit jarenlange ervaring, een sterke productkennis en een goede procesbeheersing, streven wij naar een kwalitatief hoogstaand eindproduct. Kortom, het bewaken van onze kwaliteit krijgt onze grootste aandacht.
+                    </p>
+                
+                    <a href="contact.html" class="cs-button-solid">Contact</a>
+                </div>
+            </div>
+        </section>    
+        
+        
+        <!-- ============================================ -->
+        <!--                   About Us                   -->
+        <!-- ============================================ -->
+
+        <section id="RPsbs-580">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/historiek-header.jpeg" alt="room" width="494" height="700">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">Historiek</span>
+                    <h2 class="cs-title">Een bakkerij met een lange geschiedenis</h2>
+                    <p class="cs-text">
+                        Bakkerij Rondelez werd opgericht in 1963 door Bernard en Thérèse Rondelez-Pierloot in de De Koninckstraat in Molenbeek waar dagvers brood, ontbijtkoeken en fijne patisserie werden gemaakt.
+                    </p>
+                    <p class="cs-text">
+                        In 1972 besloten Bernard en Thérèse de zaak uit te breiden en een andere locatie te zoeken. En die kwam er in de Romanie Van Dyckstraat in Anderlecht.
+                    </p>
+                    <p class="cs-text">
+                        Het werd een uitdaging om ondanks de groei toch steeds nog het ambachtelijke proces zoveel mogelijk te behouden. Om deze reden werd besloten om het gebruik van machines tot een minimum te beperken.
+                    </p>
+                    <a href="historiek.html" class="cs-button-solid">Ontdek meer</a>
+                </div>
+            </div>
+        </section>
+                                        
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+                                
+
+    <!--Gallery JS-->
+    <script>
+        class CS_GalleryFilter {
+            filtersSelector = '.cs-button'
+            galleriesSelector = '.cs-gallery'
+            activeClass = 'cs-active'
+            hiddenClass = 'cs-hidden'
+
+            constructor() {
+                this.$galleries = document.querySelectorAll(this.galleriesSelector)
+                const $filters = document.querySelectorAll(this.filtersSelector)
+
+                this.onClick($filters[0])
+
+                for (const $filter of $filters) {
+                    $filter.addEventListener('click', () => this.onClick($filter))
+                }
+            }
+
+            onClick($filter) {
+                this.filter($filter.dataset.filter)
+
+                const { activeClass } = this
+
+                this.$activeFilter?.classList.remove(activeClass)
+                $filter.classList.add(activeClass)
+
+                this.$activeFilter = $filter
+            }
+
+            filter(filter) {
+                const showAll = filter == 'all'
+                const { hiddenClass } = this
+
+                for (const $gallery of this.$galleries) {
+                    const show = showAll || $gallery.dataset.category == filter
+                    $gallery.classList.toggle(hiddenClass, !show)
+                }
+            }
+        }
+
+        new CS_GalleryFilter()
+                                
+    </script>
+</body>
+</html>

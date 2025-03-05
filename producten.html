@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.website.com/">
+
+    <meta name="description" content="Meta description for the page">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Title that shows up on google searches"/>
+    <meta property="og:description" content="Meta description for the page"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="Official link for that page (https://www.site.com)"/>
+    <meta property="og:image" content="/assets/images/social.jpg"/>
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg"/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/images/logo-light.png">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/producten.css">
+
+    <title>Service Keyword Phrase | Company Name | City, State</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="nav-placeholder"></div>
+
+    <script>
+           fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+    
+                // Load nav.js AFTER nav.html is loaded
+                const script = document.createElement('script');
+                script.src = "/assets/js/nav.js";
+                document.body.appendChild(script);
+            });
+    </script>
+
+    <main id="main">
+
+        <!-- ============================================ -->
+        <!--                   Gallery                    -->
+        <!-- ============================================ -->
+
+        <section id="gallery-453">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <div class="cs-flex">
+                        <span class="cs-topper">Producten</span>
+                        <h2 class="cs-title">Ons assortiment</h2>
+                    </div>
+                </div>
+                <!--Gallery 1-->
+                <div class="cs-gallery" >
+                    <!--Picture 1-->
+                    <a href="producten/broden.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/broden-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Broden</p>
+                        </div>
+                    </a>    
+                    <!--Picture 2-->
+                    <a href="producten/luxeproducten.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/luxeproducten-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Luxeproducten</p>
+                        </div>
+                    </a>
+                    <!--Picture 3-->
+                    <a href="producten/viennoiserie.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/viennoiserie-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Viennoiserie</p>
+                        </div>
+                    </a>
+                    <!--Picture 4-->
+                    <a href="producten/kleinbrood.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/kleine-broden-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Klein brood</p>
+                        </div>
+                    </a>
+                    <a href="producten/verassingsbrood.html" class="product-link">
+                        <div class="product">
+                            <picture class="cs-image">
+                                <img loading="lazy" decoding="async" src="/assets/images/verassingsbroden-header.jpeg" alt="gallery" width="305" height="400">
+                            </picture>
+                            <p>Verassingsbrood</p>
+                        </div>
+                    </a>
+                </div>
+              
+            </div>
+        </section>
+            
+                                
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+                                
+
+</body>
+</html>
