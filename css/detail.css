@@ -369,7 +369,7 @@
     /* centers the inline-block button */
     text-align: center;
     padding: var(--sectionPadding);
-    margin-top: 45px;
+    margin-top: 84px;
   }
   #gallery-453 .cs-container {
     width: 100%;
@@ -447,11 +447,13 @@
     justify-content: start;
     align-items: start;
     /* 16px - 20px */
-    gap: 40px;
     transition: transform .7s, opacity .3s, visibility .5s, top .3s, left .3s;
     /* makes the transfrom scaling orgin the top left corner, dictates the direction by which the scale transforms animate towards */
     transform-origin: left top;
     padding: 24px;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
   }
   .left, .right{
     flex: 1;
@@ -460,6 +462,9 @@
     gap: 6px;
     width: 200px;
     text-align: left;
+  }
+  .middle{
+    display: none;
   }
   .left.full{
     width: 100%;
@@ -538,7 +543,12 @@
     width: auto;
   }
   #gallery-453 .cs-gallery {
+    flex-direction: row;
     justify-content: space-between;
+    gap: 40px;
+  }
+  .middle{
+    display: block;
   }
   #gallery-453 .cs-image {
     /* 171px - 305px */
